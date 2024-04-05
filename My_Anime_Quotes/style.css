@@ -13,7 +13,7 @@ body {
     background-size: cover;
 }
 
-#quote-box {
+.quote-box {
     background: #fff;
     width: 700px;
     position: absolute;
@@ -39,13 +39,13 @@ h1 {
     color: #FFFFFF;
 }
 
-#quote-box h2 {
+.quote-box h2 {
     font-size: 32px;
     margin-bottom: 40px;
     position: relative;
 }
 
-#quote-box h2::after {
+.quote-box h2::after {
     content: '';
     width: 75px;
     height: 3px;
@@ -57,23 +57,23 @@ h1 {
     transform: translateX(-50%);
 }
 
-#quote-box #quoteCharacter {
-    font-size: 26px;
-    min-height: 110px;
+.quote-box #quote-container {
+    font-size: 20px;
+    min-height: 120px;
 }
 
-#quote-box #quoteCharacter::before, #quote-box #quoteCharacter::after {
+.quote-box #quote-container::before, .quote-box #quote-container::after {
     content: '';
 }
 
-#quote-box #quoteCharacter {
+.quote-box #quoteCharacter {
     display: block;
     margin-top: 10px;
     float: right;
     position: relative;
 }
 
-#quote-box #quoteCharacter::before {
+.quote-box #quoteCharacter::before {
     content: '';
     width: 20px;
     height: 2px;
@@ -83,14 +83,14 @@ h1 {
     left: -30px;
 }
 
-#quote-box div {
+.quote-box div {
     width: 100%;
     margin-top: 50px;
     display: flex;
     justify-content: center;
 }
 
-#quote-box button {
+.quote-box button {
     background-color: rgb(23, 124, 229);
     color: #fff;
     border-radius: 25px;

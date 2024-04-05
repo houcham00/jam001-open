@@ -1,4 +1,4 @@
-const quoteContainer = document.getElementById('quote-box');
+const quoteContainer = document.getElementById('quote-container');
 const newQuoteBtn = document.getElementById('new-quote-btn');
 const quoteAnime = document.getElementById('quoteAnime');
 const quoteCharacter = document.getElementById('quoteCharacter');
