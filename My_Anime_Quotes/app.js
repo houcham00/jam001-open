@@ -1,5 +1,7 @@
 const quoteContainer = document.getElementById('quote-container');
 const newQuoteBtn = document.getElementById('new-quote-btn');
+const quoteSender = document.getElementById('quote-sender');
+
 const quoteAnime = document.getElementById('quoteAnime');
 const quoteCharacter = document.getElementById('quoteCharacter');
 
@@ -18,6 +20,15 @@ function fetchRandomQuote() {
         });
 }
 
+function tweet() {
+    const quote = quoteContainer.textContent;
+    const character = quoteCharacter.textContent;
+    const anime = quoteAnime.textContent;
+    const tweetContent = encodeURIComponent(`${quote}\nby ${character}\nfrom ${anime}`);
+    window.open(`https://twitter.com/intent/tweet?text=${tweetContent}`, "Tweet Window", "width=600, height=300");
+}
+
 fetchRandomQuote();
 
 newQuoteBtn.addEventListener('click', fetchRandomQuote);
+quoteSender.addEventListener('click', tweet);
